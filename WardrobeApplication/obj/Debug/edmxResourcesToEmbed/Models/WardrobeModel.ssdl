@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WardrobeDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Closet">
+    <Key>
+      <PropertyRef Name="ClothingID" />
+    </Key>
+    <Property Name="ClothingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClothingTypeID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Color" Type="varchar" MaxLength="50" />
+    <Property Name="Season" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Occasion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ClothingType">
+    <Key>
+      <PropertyRef Name="ClothingTypeID" />
+    </Key>
+    <Property Name="ClothingTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClothingTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Closet_ClothingType">
+    <End Role="ClothingType" Type="Self.ClothingType" Multiplicity="1" />
+    <End Role="Closet" Type="Self.Closet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClothingType">
+        <PropertyRef Name="ClothingTypeID" />
+      </Principal>
+      <Dependent Role="Closet">
+        <PropertyRef Name="ClothingTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="WardrobeDBModelStoreContainer">
+    <EntitySet Name="Closet" EntityType="Self.Closet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClothingType" EntityType="Self.ClothingType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Closet_ClothingType" Association="Self.FK_Closet_ClothingType">
+      <End Role="ClothingType" EntitySet="ClothingType" />
+      <End Role="Closet" EntitySet="Closet" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
