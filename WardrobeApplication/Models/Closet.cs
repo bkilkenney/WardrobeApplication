@@ -11,7 +11,8 @@ namespace WardrobeApplication.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Closet
     {
         public int ClothingID { get; set; }
@@ -21,7 +22,8 @@ namespace WardrobeApplication.Models
         public string Color { get; set; }
         public string Season { get; set; }
         public string Occasion { get; set; }
-    
+
+        [Display(Name="Clothing Type")]
         public virtual ClothingType ClothingType { get; set; }
     }
 }
