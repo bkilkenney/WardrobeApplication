@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using WardrobeApplication.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace WardrobeApplication.Controllers
 {
