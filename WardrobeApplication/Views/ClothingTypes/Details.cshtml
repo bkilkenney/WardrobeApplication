@@ -7,20 +7,16 @@
 <h2>Details</h2>
 
 <div>
-    <h4>ClothingType</h4>
+    <h4>Clothing Type</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.ClothingTypeName)
-        </dt>
+    
 
-        <dd>
-            @Html.DisplayFor(model => model.ClothingTypeName)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ClothingTypeID }) |
-    @Html.ActionLink("Back to List", "Index")
+          <p><h5>@Html.DisplayNameFor(model => model.ClothingTypeName)</h5></p>
+        
+            <p>@Html.DisplayFor(model => model.ClothingTypeName)</p>
+     
+<p>                     <!--Added buttons-->
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ClothingTypeID }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Back to List", "Index", new { id = Model.ClothingTypeID }, new { @class = "btn btn-warning" })
 </p>
+</div>

@@ -4,30 +4,38 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Clothing Types</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ClothingTypeName)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ClothingTypeName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ClothingTypeID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ClothingTypeID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ClothingTypeID })
-        </td>
-    </tr>
-}
 
-</table>
+
+@*@Html.DisplayNameFor(model => model.ClothingTypeName)*@
+
+
+
+@foreach (var item in Model)
+{
+
+
+    <div class="col-sm-4 col-md-4 col-lg-4">
+
+        <div class="thumbnail">
+            <!--Each clothing type displays in a thumbnail-->
+            <div class="caption">
+
+                <p><h4>@Html.DisplayFor(modelItem => item.ClothingTypeName)</h4></p>
+
+
+                @Html.ActionLink("Edit", "Edit", new { id = item.ClothingTypeID }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Details", "Details", new { id = item.ClothingTypeID }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Delete", "Delete", new { id = item.ClothingTypeID }, new { @class = "btn btn-danger" })
+            </div>
+            </div>
+        </div>
+
+
+                }
+
