@@ -23,7 +23,7 @@ textarea {
     max-width: 280px;
 }
 
-h5{
+h5{  /*The "Title" of each line in bold*/
     font-weight:bold;
     
 }
