@@ -9,14 +9,14 @@
 <div>
     <h4>Clothing Type</h4>
     <hr />
-    
 
-          <p><h5>@Html.DisplayNameFor(model => model.ClothingTypeName)</h5></p>
-        
-            <p>@Html.DisplayFor(model => model.ClothingTypeName)</p>
-     
-<p>                     <!--Added buttons-->
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ClothingTypeID }, new { @class = "btn btn-primary" })
-    @Html.ActionLink("Back to List", "Index", new { id = Model.ClothingTypeID }, new { @class = "btn btn-warning" })
-</p>
+    <p><h5>@Html.DisplayNameFor(model => model.ClothingTypeName)</h5></p>
+
+    <p>@Html.DisplayFor(model => model.ClothingTypeName)</p>
+
+    <p>
+        <!--Added buttons-->
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ClothingTypeID }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Back to List", "Index", new { id = Model.ClothingTypeID }, new { @class = "btn btn-warning" })
+    </p>
 </div>

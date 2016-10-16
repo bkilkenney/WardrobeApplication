@@ -22,10 +22,10 @@ namespace WardrobeApplication.Models
         }
 
         //Added Data Annotations for the names of the properties in this table 
-        [Display(Name ="Clothing Type ID")]
+        [Display(Name ="Clothing Type")]
         public int ClothingTypeID { get; set; }
 
-        [Display(Name ="Clothing Type Name")]
+        [Display(Name ="Name")]
         public string ClothingTypeName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

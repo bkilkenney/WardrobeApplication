@@ -16,10 +16,10 @@ namespace WardrobeApplication.Models
     public partial class Closet
     {
         //Added Data Annotations for the names of some properties in this table
-        [Display(Name ="Clothing ID")]
+        [Display(Name ="Item #")]
         public int ClothingID { get; set; }
 
-        [Display(Name ="Clothing Type ID")]
+        [Display(Name ="Clothing Type")]
         public int ClothingTypeID { get; set; }
 
         public string Name { get; set; }
