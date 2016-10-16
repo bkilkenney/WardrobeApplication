@@ -7,9 +7,8 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Closet</h4>
+    <h4>Closet Item</h4>
     <hr />
-    <dl class="dl-horizontal">
         
         <p><h5>@Html.DisplayNameFor(model => model.Name)</h5>@Html.DisplayFor(model => model.Name)</p>
         
@@ -23,9 +22,8 @@
 
         <p><h5>@Html.DisplayNameFor(model => model.ClothingType.ClothingTypeName)</h5>@Html.DisplayFor(model => model.ClothingType.ClothingTypeName)</p>
 
-    </dl>
 </div>
-<p>
+<p>                     <!--Added bootstrap buttons-->
     @Html.ActionLink("Edit", "Edit", new { id = Model.ClothingID }, new { @class = "btn btn-primary" })
     @Html.ActionLink("Back to List", "Index", new { id = Model.ClothingID }, new { @class = "btn btn-warning"})
 </p>
