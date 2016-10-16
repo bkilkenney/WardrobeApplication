@@ -2,7 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     background-image: url(WardrobePhoto.jpg);  
-    width:100%;
+    width:100%; 
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -28,4 +28,14 @@ textarea {
 h5{  /*The "Title" of each line in bold*/
     font-weight:bold;
     
+}
+
+.thumbnail{
+    margin:10px;        /*Some space between the thumbnails*/
+    background-color:lightgray;
+}
+
+.navbar{
+    background-color:darkmagenta;
+    color:navajowhite;
 }
