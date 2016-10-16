@@ -11,6 +11,7 @@ namespace WardrobeApplication.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class ClothingType
     {
@@ -19,8 +20,12 @@ namespace WardrobeApplication.Models
         {
             this.Closets = new HashSet<Closet>();
         }
-    
+
+        //Added Data Annotations for the names of the properties in this table 
+        [Display(Name ="Clothing Type ID")]
         public int ClothingTypeID { get; set; }
+
+        [Display(Name ="Clothing Type Name")]
         public string ClothingTypeName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

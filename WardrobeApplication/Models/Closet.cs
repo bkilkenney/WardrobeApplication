@@ -15,8 +15,13 @@ namespace WardrobeApplication.Models
 
     public partial class Closet
     {
+        //Added Data Annotations for the names of some properties in this table
+        [Display(Name ="Clothing ID")]
         public int ClothingID { get; set; }
+
+        [Display(Name ="Clothing Type ID")]
         public int ClothingTypeID { get; set; }
+
         public string Name { get; set; }
         public string Photo { get; set; }
         public string Color { get; set; }
