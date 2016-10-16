@@ -4,60 +4,52 @@
     ViewBag.Title = "Closet Home";
 }
 
-<h2>Closet</h2>
+<h2>Welcome to your Closet</h2>
 
-<p>
-    @Html.ActionLink("Add New Item", "Create")
-</p>
-
-
-
-@*@Html.DisplayNameFor(model => model.Name)
-
-
-    @Html.DisplayNameFor(model => model.Photo)
-
-
-    @Html.DisplayNameFor(model => model.Color)
-
-
-    @Html.DisplayNameFor(model => model.Season)
-
-
-    @Html.DisplayNameFor(model => model.Occasion)
-
-
-    @Html.DisplayNameFor(model => model.ClothingType.ClothingTypeName)*@
-
+    <p>
+        <!--Create new item on it's own line-->
+        @Html.ActionLink("Add New Item", "Create")
+    </p>
 
 <div class="row">
 
     @foreach (var item in Model)
     {
 
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            
+            <div class="thumbnail">  <!--Each article of clothing is a thumbnail-->
                 <div class="caption">
 
-                    @Html.DisplayFor(modelItem => item.Name)
+                    <p><h5>@Html.DisplayFor(modelItem => item.ClothingType.ClothingTypeName)</h5></p>
+                    
+                    <p><h5>@Html.DisplayNameFor(model => model.Name)</h5>@Html.DisplayFor(modelItem => item.Name)</p>
 
-                    @Html.DisplayFor(modelItem => item.Photo)
+                    <p><h5>@Html.DisplayNameFor(model => model.Photo)</h5>@Html.DisplayFor(modelItem => item.Photo)</p>
+                    
+                    <p><h5>@Html.DisplayNameFor(model => model.Color)</h5>@Html.DisplayFor(modelItem => item.Color)</p>
 
-                    @Html.DisplayFor(modelItem => item.Color)
+                    <p><h5>@Html.DisplayNameFor(model => model.Season)</h5>@Html.DisplayFor(modelItem => item.Season)</p>
 
-                    @Html.DisplayFor(modelItem => item.Season)
+                    <p><h5>@Html.DisplayNameFor(model => model.Occasion)</h5>@Html.DisplayFor(modelItem => item.Occasion)</p>
 
-                    @Html.DisplayFor(modelItem => item.Occasion)
 
-                    @Html.DisplayFor(modelItem => item.ClothingType.ClothingTypeName)
-
-                    @Html.ActionLink("Edit", "Edit", new { id = item.ClothingID }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.ClothingID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.ClothingID })
+                <p>         <!--Buttons for these items all on the same line-->
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ClothingID }, new {@class="btn btn-primary"})
+                    @Html.ActionLink("Details", "Details", new { id = item.ClothingID }, new { @class = "btn btn-warning" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ClothingID }, new { @class = "btn btn-danger" })
+                </p> 
+                    
+                    </div>
+               
                 </div>
+           
             </div>
-        </div>
+           
     }
+    
 
-</div>
+    </div>
+
+
 
