@@ -10,57 +10,22 @@
     <h4>Closet</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+        
+        <p><h5>@Html.DisplayNameFor(model => model.Name)</h5>@Html.DisplayFor(model => model.Name)</p>
+        
+        <p><h5>@Html.DisplayNameFor(model => model.Photo)</h5>@Html.DisplayFor(model => model.Photo)</p>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+        <p><h5>@Html.DisplayNameFor(model => model.Color)</h5>@Html.DisplayFor(model => model.Color)</p>
+      
+        <p><h5>@Html.DisplayNameFor(model => model.Season)</h5>@Html.DisplayFor(model => model.Season)</p>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
+        <p><h5>@Html.DisplayNameFor(model => model.Occasion)</h5>@Html.DisplayFor(model => model.Occasion)</p>
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ClothingType.ClothingTypeName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ClothingType.ClothingTypeName)
-        </dd>
+        <p><h5>@Html.DisplayNameFor(model => model.ClothingType.ClothingTypeName)</h5>@Html.DisplayFor(model => model.ClothingType.ClothingTypeName)</p>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ClothingID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ClothingID }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Back to List", "Index", new { id = Model.ClothingID }, new { @class = "btn btn-warning"})
 </p>
