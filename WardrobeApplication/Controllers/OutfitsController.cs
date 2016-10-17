@@ -21,6 +21,14 @@ namespace WardrobeApplication.Controllers
         }
 
         // GET: Outfits/Details/5
+
+
+        protected void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Outfit>().ToTable("Outfit");
+        }
+
+
         public ActionResult Details(int? id)
         {
             if (id == null)
