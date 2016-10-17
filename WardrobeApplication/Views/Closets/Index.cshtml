@@ -26,7 +26,7 @@
 
                     <p><h5>@Html.DisplayNameFor(model => model.Name)</h5>@Html.DisplayFor(modelItem => item.Name)</p>
 
-                    <p><h5>@Html.DisplayNameFor(model => model.Photo)</h5>@Html.DisplayFor(modelItem => item.Photo)</p>
+                    <img src="@Url.Content("~/Content/" + item.Photo)" />
 
                     <p><h5>@Html.DisplayNameFor(model => model.Color)</h5>@Html.DisplayFor(modelItem => item.Color)</p>
 
