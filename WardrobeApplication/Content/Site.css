@@ -120,3 +120,7 @@ h2{
     font-family: 'Bree Serif', serif;
     text-decoration:overline;
 }
+
+.control-label{
+    color:darkmagenta;
+}
