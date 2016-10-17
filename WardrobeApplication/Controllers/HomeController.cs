@@ -10,6 +10,7 @@ namespace WardrobeApplication.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Title = "Your 2016 Wardrobe";
             return View();
         }
 
