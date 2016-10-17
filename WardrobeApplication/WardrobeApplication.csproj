@@ -161,6 +161,7 @@
     <Compile Include="Controllers\ClosetsController.cs" />
     <Compile Include="Controllers\ClothingTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OutfitsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -169,6 +170,24 @@
     </Compile>
     <Compile Include="Models\ClothingType.cs">
       <DependentUpon>WardrobeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Outfit.cs">
+      <DependentUpon>OutfitModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OutfitModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutfitModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OutfitModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutfitModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OutfitModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutfitModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
       <DependentUpon>WardrobeModel.tt</DependentUpon>
@@ -209,6 +228,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\OutfitModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OutfitModel.edmx</DependentUpon>
+      <LastGenOutput>OutfitModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\OutfitModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OutfitModel.edmx</DependentUpon>
+      <LastGenOutput>OutfitModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\WardrobeModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>WardrobeModel.Context.cs</LastGenOutput>
@@ -232,6 +261,13 @@
     </EntityDeploy>
     <Content Include="Models\WardrobeModel.edmx.diagram">
       <DependentUpon>WardrobeModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\OutfitModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OutfitModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\OutfitModel.edmx.diagram">
+      <DependentUpon>OutfitModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -269,6 +305,11 @@
     <Content Include="Views\ClothingTypes\Details.cshtml" />
     <Content Include="Views\ClothingTypes\Edit.cshtml" />
     <Content Include="Views\ClothingTypes\Index.cshtml" />
+    <Content Include="Views\Outfits\Create.cshtml" />
+    <Content Include="Views\Outfits\Delete.cshtml" />
+    <Content Include="Views\Outfits\Details.cshtml" />
+    <Content Include="Views\Outfits\Edit.cshtml" />
+    <Content Include="Views\Outfits\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

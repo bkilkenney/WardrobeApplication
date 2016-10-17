@@ -13,10 +13,10 @@ namespace WardrobeApplication.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WardrobeDBEntities : DbContext
+    public partial class WardrobeDBEntities1 : DbContext
     {
-        public WardrobeDBEntities()
-            : base("name=WardrobeDBEntities")
+        public WardrobeDBEntities1()
+            : base("name=WardrobeDBEntities1")
         {
         }
     
@@ -25,10 +25,6 @@ namespace WardrobeApplication.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Closet> Closets { get; set; }
-        public virtual DbSet<ClothingType> ClothingTypes { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-
-        public System.Data.Entity.DbSet<WardrobeApplication.Models.Outfit> Outfits { get; set; }
+        public virtual DbSet<Outfit> Outfits { get; set; }
     }
 }
