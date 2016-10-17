@@ -4,6 +4,7 @@
     background-image: url(WardrobePhoto.jpg); 
     width:100%; 
     background-size:contain;
+    font-family: 'Abhaya Libre', serif;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -40,12 +41,14 @@ h5{  /*The "Title" of each line in bold*/
 
 .navbar{
     background-color:darkmagenta;
-    color:navajowhite;
+    color:white;
 }
 
 h4{
     text-decoration:underline;
     font-weight:bold;
+    color:white;
+    text-shadow: 5px 5px 3px  darkmagenta;  /*Casting a shadow behind the text, 3rd setting of 3px makes it blurry but just visible enough to see that it's a shadow of the word*/
 }
 
 img{
@@ -62,13 +65,56 @@ navbar-form navbar-right{
 }
 
 .navbar-inverse .navbar-nav > li > a{
-    color:white;
+    color:white;    /*Home, About, Contact Us*/
 }
 
 a{
+    color:white;  /*"Create new Item" in project*/
+}
+
+.navbar-brand .navbar-toggle .navbar-inverse{
+    color:white; 
+}
+
+p{
+    font-size:larger;
+    color:palegoldenrod;
+    text-shadow:5px 5px 5px 5px darkmagenta;
+}
+
+#typeIndexThumbs{ /*ID for making the thumbs' height lower*/
+   
+    min-height:100px;
+}
+
+.Road{  /*Google Font*/
+    font-family: 'Bungee Inline', cursive;
+    color:darkmagenta;
+    font-weight:bold;
+    font-size:14pt;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:100px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+    position: relative; /*Below what is there, not always at the very bottom of the screen*/
+    margin-top: -150px; /* negative value of footer height */
+    height: 50px;
+    clear: both;
+    padding-top: 60px;
+}
+
+.glyphicon{
     color:white;
 }
 
-.navbar-brand{
+h2{
     color:white;
 }

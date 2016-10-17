@@ -11,6 +11,12 @@
     @Html.ActionLink("Add New Item", "Create")
 </p>
 
+<!--Dismissible alert for sweepstakes-->
+<div class="alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>ACT FAST!</strong> Don't Miss Your Chance to Win a $5,000 Nordstrom Shopping Spree!!!
+</div>
+
 <div class="row">
 
     @foreach (var item in Model)
