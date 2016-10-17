@@ -11,8 +11,8 @@
     <hr />
         
         <p><h5>@Html.DisplayNameFor(model => model.Name)</h5>@Html.DisplayFor(model => model.Name)</p>
-        
-        <p><h5>@Html.DisplayNameFor(model => model.Photo)</h5> <img src="~/Content/DenimShirt1.jpg" style="width:50%"/> </p>
+
+        <img src="@Url.Content("~/Content/" + Model.Photo)"/>
 
         <p><h5>@Html.DisplayNameFor(model => model.Color)</h5>@Html.DisplayFor(model => model.Color)</p>
       
@@ -20,7 +20,7 @@
 
         <p><h5>@Html.DisplayNameFor(model => model.Occasion)</h5>@Html.DisplayFor(model => model.Occasion)</p>
 
-        <p><h5>@Html.DisplayNameFor(model => model.ClothingType.ClothingTypeName)</h5>@Html.DisplayFor(model => model.ClothingType.ClothingTypeName)</p>
+        
 
 </div>
 <p>                     <!--Added bootstrap buttons-->
