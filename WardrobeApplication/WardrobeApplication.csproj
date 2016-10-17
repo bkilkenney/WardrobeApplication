@@ -191,14 +191,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\BlackShoes.jpeg" />
+    <Content Include="Content\BlueSuit.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\BowTie.jpeg" />
     <Content Include="Content\BrownShoes1.jpeg" />
     <Content Include="Content\DenimShirt1.jpg" />
     <Content Include="Content\Flannel1.jpg" />
+    <Content Include="Content\GreySweater.jpeg" />
     <Content Include="Content\RedSweater.jpg" />
     <Content Include="Content\Suit1.jpg" />
+    <Content Include="Content\Suspenders.jpg" />
     <Content Include="Content\WardrobePhoto.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
