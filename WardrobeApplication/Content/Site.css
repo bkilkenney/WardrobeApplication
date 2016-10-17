@@ -116,6 +116,7 @@ p{
 }
 
 h2{
-    color:white;
-    font-family: 'Amita', cursive;
+    color:black;
+    font-family: 'Bree Serif', serif;
+    text-decoration:overline;
 }
