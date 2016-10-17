@@ -18,7 +18,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ClothingTypeID, "ClothingTypeID", htmlAttributes: new { @class = "control-label col-md-2" })           
             <div class="col-md-10">
-                @Html.DropDownList("ClothingTypeID", null, htmlAttributes: new { @class = "form-control" })  <!--Dropdown list to limit user options-->
+                @Html.DropDownList("ClothingTypeID", null, htmlAttributes: new { @class = "form-control" })  @* @Html helper to create dropdown list, this one was scaffolded*@
                 @Html.ValidationMessageFor(model => model.ClothingTypeID, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -50,7 +50,14 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Season, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Season, new { htmlAttributes = new { @class = "form-control" } })
+
+                <select>        <!--HTML Dropdown list for selecting season, I added this list as oppsed to the scaffolded list above-->
+                    <option value="Winter">Winter</option>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Fall">Fall</option>
+                    <option value="All">All</option>
+                </select>
                 @Html.ValidationMessageFor(model => model.Season, "", new { @class = "text-danger" })
             </div>
         </div>

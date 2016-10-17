@@ -48,3 +48,7 @@ h4{
 img{
     width:40%;
 }
+
+navbar-form navbar-right{
+    padding:0;
+}

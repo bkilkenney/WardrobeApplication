@@ -4,7 +4,7 @@
     ViewBag.Title = "Closet Home";
 }
 
-<h2>Welcome to your Closet</h2>
+<h2>2016 Wardrobe</h2>
 
 <p>
     <!--Create new item on it's own line-->
@@ -26,7 +26,7 @@
 
                     <p><h5>@Html.DisplayNameFor(model => model.Name)</h5>@Html.DisplayFor(modelItem => item.Name)</p>
 
-                    <img src="@Url.Content("~/Content/" + item.Photo)" />
+                    <img src="@Url.Content("~/Content/" + item.Photo)" />  <!--Relative path to the Photo inside of this record in the db-->
 
                     <p><h5>@Html.DisplayNameFor(model => model.Color)</h5>@Html.DisplayFor(modelItem => item.Color)</p>
 
