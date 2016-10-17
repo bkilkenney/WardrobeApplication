@@ -3,6 +3,7 @@
     padding-bottom: 20px;
     background-image: url(WardrobePhoto.jpg); 
     width:100%; 
+    background-size:contain;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -33,6 +34,8 @@ h5{  /*The "Title" of each line in bold*/
 .thumbnail{
     margin:10px;        /*Some space between the thumbnails*/
     background-color:lightgray;
+    min-height:435px;
+    line-height:20px;
 }
 
 .navbar{
@@ -47,8 +50,25 @@ h4{
 
 img{
     width:40%;
+    
 }
 
 navbar-form navbar-right{
     padding:0;
+}
+
+.caption{
+    min-height:20px;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color:white;
+}
+
+a{
+    color:white;
+}
+
+.navbar-brand{
+    color:white;
 }
