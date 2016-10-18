@@ -5,6 +5,7 @@
     width:100%; 
     background-size:contain;
     font-family: 'Abhaya Libre', serif;
+    color:white;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -83,8 +84,7 @@ p{
     text-shadow:5px 5px 5px 5px darkmagenta;
 }
 
-#typeIndexThumbs{ /*ID for making the thumbs' height lower*/
-   
+#typeIndexThumbs{ /*ID for making the thumbs' height lower*/   
     min-height:100px;
 }
 
@@ -125,3 +125,8 @@ h2{
 .control-label{
     color:darkmagenta;
 }
+
+h5{     /*For details to match other views*/
+    color:darkmagenta;
+}
+

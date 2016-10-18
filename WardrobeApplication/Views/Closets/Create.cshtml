@@ -16,7 +16,7 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.ClothingTypeID, "ClothingTypeID", htmlAttributes: new { @class = "control-label col-md-2" })           
+            @Html.LabelFor(model => model.ClothingTypeID, "Clothing Type", htmlAttributes: new { @class = "control-label col-md-2" })           
             <div class="col-md-10">
                 @Html.DropDownList("ClothingTypeID", null, htmlAttributes: new { @class = "form-control" })  @* @Html helper to create dropdown list, this one was scaffolded*@
                 @Html.ValidationMessageFor(model => model.ClothingTypeID, "", new { @class = "text-danger" })
