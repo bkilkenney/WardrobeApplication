@@ -23,10 +23,8 @@
             <div class="caption">
 
                 <p><h4>@Html.DisplayFor(modelItem => item.ClothingTypeName)</h4></p>
-
+                <!--Fun icons from AwesomeFonts-->
                 <p><img src="~/Content/tie4.png" /><img src="~/Content/shoe.png" /><img src="~/Content/shirt.png" /><img src="~/Content/shorts.png" /></p>
-                
-                
 
                 @Html.ActionLink("Edit", "Edit", new { id = item.ClothingTypeID }, new { @class = "btn btn-primary" })
                 @Html.ActionLink("Details", "Details", new { id = item.ClothingTypeID }, new { @class = "btn btn-warning" })
@@ -38,5 +36,5 @@
 
 }
 
-
+<!--No need to display clothing type name here-->
 @*@Html.DisplayNameFor(model => model.ClothingTypeName)*@
