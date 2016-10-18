@@ -221,8 +221,12 @@
     <Content Include="Content\GreySweater.jpeg" />
     <Content Include="Content\OliveSlacks.jpeg" />
     <Content Include="Content\RedSweater.jpg" />
+    <Content Include="Content\shirt.png" />
+    <Content Include="Content\shoe.png" />
+    <Content Include="Content\shorts.png" />
     <Content Include="Content\Suit1.jpg" />
     <Content Include="Content\Suspenders.jpg" />
+    <Content Include="Content\tie4.png" />
     <Content Include="Content\WardrobePhoto.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
