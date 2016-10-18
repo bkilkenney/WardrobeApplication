@@ -37,6 +37,7 @@ h5{  /*The "Title" of each line in bold*/
     background-color:lightgray;
     min-height:435px;
     line-height:20px;
+    border:double;
 }
 
 .navbar{
