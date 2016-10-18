@@ -17,6 +17,7 @@ Features Include:
 -Thumbnails
 -Row and columns in the Closets/Index.cshtml view
 -Active links in the Home/Index.cshtml view which open new tabs targeted at relavant websites
+-Icons from Awesome Fonts
 
 An outfit model was created and linked to the Closet table with ClosetID as the foreign key.  The additional stetch task of using
 clothing from each type to create an outfit could not be completed.  
